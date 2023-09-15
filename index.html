@@ -48,7 +48,7 @@
             <li class="menu-item delivery-item">
               <a class="menu-btn" href="#">Доставка и оплата</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item about-item">
               <a class="menu-btn" href="#">О компании</a>
             </li>
           </ul>
@@ -60,93 +60,102 @@
               </div>
             </li>
             <li class="user-menu-item with-submenu">
-              <button class="btn search-btn" type="button">
-                <span class="visually-hidden">Поиск</span>
-              </button>
-              <form class="search-form user-submenu" action="https://echo.htmlacademy.ru/" method="get">
-                <input class="input search-input" type="search" name="search" id="search" placeholder="Поиск по сайту"
-                  required>
-                <label class="visually-hidden" for="search">Поиск
-                </label>
-                <button class="delete-btn reset-search" type="reset">
-                  <span class="visually-hidden">Очистить форму</span>
+              <div class="li-box">
+                <button class="btn search-btn" type="button">
+                  <span class="visually-hidden">Поиск</span>
                 </button>
-              </form>
+                <form class="search-form user-submenu" action="https://echo.htmlacademy.ru/" method="get">
+                  <input class="input search-input" type="search" name="search" id="search" placeholder="Поиск по сайту"
+                    required>
+                  <label class="visually-hidden" for="search">Поиск
+                  </label>
+                  <button class="delete-btn reset-search" type="reset">
+                    <span class="visually-hidden">Очистить форму</span>
+                  </button>
+                </form>
+              </div>
             </li>
             <li class="user-menu-item with-submenu">
-              <button class="btn entry-btn" type="button">Вход</button>
-              <!--  Окошко - входа в ЛК  -->
-              <form class="user-form user-submenu" action="https://echo.htmlacademy.ru" method="post">
-                <h3 class="subtitle">Личный кабинет</h3>
-                <label class="visually-hidden" for="user-email">Ваш e-mail.
-                </label>
-                <input class="input user-email" type="email" name="user-email" id="user-email" placeholder="Ваш e-mail"
-                  value="email@example.com" required>
-                <label class="visually-hidden" for="password">Пароль:
-                </label>
-                <input class="input password" id="password" type="password" name="password" placeholder="Введите пароль"
-                  value="123456" required>
-                <div class="buttons-wrap">
-                  <button class="btn enter-btn" type="submit"> Войти
-                  </button>
-                  <a class="near-enter" href="#">Забыли пароль?</a>
-                  <a class="near-enter registration" href="#">Регистрация</a>
-                </div>
-              </form>
+              <div class="li-box">
+                <button class="btn entry-btn" type="button">Вход</button>
+                <!--  Окошко - входа в ЛК  -->
+                <form class="user-form user-submenu" action="https://echo.htmlacademy.ru" method="post">
+                  <h3 class="subtitle">Личный кабинет</h3>
+                  <label class="visually-hidden" for="user-email">Ваш e-mail.
+                  </label>
+                  <input class="input user-email" type="email" name="user-email" id="user-email"
+                    placeholder="Ваш e-mail" value="email@example.com" required>
+                  <label class="visually-hidden" for="password">Пароль:
+                  </label>
+                  <input class="input password" id="password" type="password" name="password"
+                    placeholder="Введите пароль" value="123456" required>
+                  <div class="buttons-wrap">
+                    <button class="btn enter-btn" type="submit"> Войти
+                    </button>
+                    <a class="near-enter" href="#">Забыли пароль?</a>
+                    <a class="near-enter registration" href="#">Регистрация</a>
+                  </div>
+                </form>
+              </div>
             </li>
+
             <li class="user-menu-item cart-item with-submenu">
-              <button class="btn cart-btn" type="button">
-                <span class="text-btn">2</span>
-                <span class="text-btn"> товара</span>
-              </button>
-              <!--  Попап корзина  -->
-              <div class="subcart-box user-submenu">
-                <h3 class="subtitle">Корзина</h3>
-                <ul class="subcart-list">
-                  <li class="subcart-item">
-                    <a class="subcart-link" href="#">
-                      <img class="subcart-img" src="./images/product-cards/bubble-gum-small.png" width="46" height="46"
-                        alt="">
-                      <span class="subcart-text product-name"> Малинка</span>
-                      <div class="product-desc-box">
-                        <span class="value">1 кг х</span>
-                        <span class="price"> 310 ₽</span>
-                      </div>
-                    </a>
-                    <span class="subcart-text total-per-position">310 ₽</span>
-                    <button class="delete-btn" type="button">
-                      <span class="visually-hidden">Удалитьтовар из корзины</span>
-                    </button>
-                  </li>
-                  <li class="subcart-item">
-                    <a class="subcart-link" href="#">
-                      <img class="subcart-img" src="./images/product-cards/raspberry-small.png" width="46" height="46"
-                        alt="">
-                      <span class="subcart-text product-name"> Бабл-гам</span>
-                      <div class="product-desc-box">
-                        <span class="value">1,5 кг х</span>
-                        <span class="price"> 320 ₽</span>
-                      </div>
-                    </a>
-                    <span class="subcart-text total-per-position">480 ₽</span>
-                    <button class="delete-btn" type="button">
-                      <span class="visually-hidden">Удалить товар из корзины</span>
-                    </button>
-                  </li>
-                </ul>
-                <div class="subcart-row-box">
-                  <a class="btn to-order" href="#">Оформить заказ</a>
-                  <span class="subcart-text">Итого: 790 ₽</span>
+              <div class="li-box">
+                <button class="btn cart-btn" type="button">
+                  <span class="text-btn">2</span>
+                  <span class="text-btn"> товара</span>
+                </button>
+                <!--  Попап корзина  -->
+                <div class="subcart-box user-submenu">
+                  <h3 class="subtitle">Корзина</h3>
+                  <ul class="subcart-list">
+                    <li class="subcart-item">
+                      <a class="subcart-link" href="#">
+                        <img class="subcart-img" src="./images/product-cards/bubble-gum-small.png" width="46"
+                          height="46" alt="">
+                        <span class="subcart-text product-name"> Малинка</span>
+                        <div class="product-desc-box">
+                          <span class="value">1 кг х</span>
+                          <span class="price"> 310 ₽</span>
+                        </div>
+                      </a>
+                      <span class="subcart-text total-per-position">310 ₽</span>
+                      <button class="delete-btn" type="button">
+                        <span class="visually-hidden">Удалитьтовар из корзины</span>
+                      </button>
+                    </li>
+                    <li class="subcart-item">
+                      <a class="subcart-link" href="#">
+                        <img class="subcart-img" src="./images/product-cards/raspberry-small.png" width="46" height="46"
+                          alt="">
+                        <span class="subcart-text product-name"> Бабл-гам</span>
+                        <div class="product-desc-box">
+                          <span class="value">1,5 кг х</span>
+                          <span class="price"> 320 ₽</span>
+                        </div>
+                      </a>
+                      <span class="subcart-text total-per-position">480 ₽</span>
+                      <button class="delete-btn" type="button">
+                        <span class="visually-hidden">Удалить товар из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="subcart-row-box">
+                    <a class="btn to-order" href="#">Оформить заказ</a>
+                    <span class="subcart-text">Итого: 790 ₽</span>
+                  </div>
                 </div>
               </div>
             </li>
             <!--  Пустая корзина  -->
             <li class="user-menu-item empty-cart with-submenu">
-              <button class="btn empty-cart-btn" type="button">
-                Нет товаров
-              </button>
-              <div class="empty-subcart-box user-submenu">
-                <span class="empty-subcart-text">Ваша корзина пока пуста</span>
+              <div class="li-box">
+                <button class="btn empty-cart-btn" type="button">
+                  Нет товаров
+                </button>
+                <div class="empty-subcart-box user-submenu">
+                  <span class="empty-subcart-text">Ваша корзина пока пуста</span>
+                </div>
               </div>
             </li>
           </ul>
@@ -160,10 +169,10 @@
         <section class="slider">
           <h2 class="visually-hidden">Рекомендуем!
           </h2>
-          <button class="btn contral-slider next-control">
+          <button class="btn contral-slider next-control" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
-          <button class="btn contral-slider prev-control">
+          <button class="btn contral-slider prev-control" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
           <ol class="slider-list">
@@ -445,7 +454,7 @@
           </div>
           <div class="delivery-form-box">
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <span class="text point-form">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
+              <span class="text point-form">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить
                 заказ.
               </span>
               <div class="label-wrap">
@@ -461,7 +470,7 @@
                 <input class="input delivery-input" type="tel" id="phone" name="phone" placeholder="+7 800 999-00-00"
                   pattern="[0-9]{5,}" required>
               </div>
-              <div class="label-wrap address">
+              <div class="label-wrap address-box">
                 <label class="label note" for="address">Адрес
                   <span class="text tooltip">Введите название улицы, дома и квартиры</span>
                 </label>
@@ -477,10 +486,10 @@
           <h2 class="visually-hidden">Наши контакты
           </h2>
           <div class="contacts-box">
-            <p class="text">Адрес главного офиса и офлайн-магазина:
+            <p class="text">Адрес главного офиса и&nbsp;офлайн-магазина:
             </p>
-            <address class="address  like-subtitle">
-              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            <address class="address like-subtitle">
+              наб. реки Карповки,<br> 5 лит П, Санкт-Петербург
             </address>
             <p class="text">Для заказов по телефону:
             </p>
@@ -489,7 +498,7 @@
             </div>
             <p class="schedule">(с 10 до 20 ежедневно)
             </p>
-            <a class="btn fedback-btn" href="#">Форма обратной связи</a>
+            <a class="btn send-btn fedback-btn" href="#">Форма обратной связи</a>
           </div>
         </section>
       </main>
@@ -513,26 +522,50 @@
             </a>
           </li>
         </ul>
-        <ul class="footer-links">
-          <li class="footer-item">
-            <a class="footer-link for-supplier" href="#">Для поставщиков</a>
+        <ul class="footer-lists">
+          <li class="footer-items first-items">
+            <ul class="list">
+              <li class="footer-item">
+                <a class="copy footer-link for-supplier" href="#">Для поставщиков</a>
+              </li>
+              <li class="footer-item">
+                <a class="copy footer-link" href="#">О производстве</a>
+              </li>
+            </ul>
           </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">Наши документы</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">О производстве</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">Экологические стандарты</a>
+          <li class="footer-items second-items">
+            <ul class="list">
+              <li class="footer-item">
+                <a class="copy footer-link" href="#">Наши документы</a>
+              </li>
+              <li class="footer-item">
+                <a class="copy footer-link" href="#">Экологические стандарты</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <ul class="copyrights">
           <li class="copy-item">
-            <a class="copy-link logo-academy" href="#"></a>
+            <a class="copy logo-academy" href="#">
+              <svg class="svg-academy" xmlns="http://www.w3.org/2000/svg" width="93" height="27" fill="none"
+                viewBox="0 0 93 27">
+                <g fill="#2D3440" clip-path="url(#a)">
+                  <path
+                    d="M0 10.4163v2.0832h1.9877v-2.0832H0ZM9.4185 3.6631c-1.2617 0-2.2815.5729-2.921 1.4062h-.0691V0h-1.642v12.4997h1.642v-4.288c0-1.7188 1.0716-2.9514 2.6445-2.9514 1.4864 0 2.3506 1.111 2.3506 2.604v4.6354h1.642V7.5693c0-2.3785-1.4692-3.9062-3.647-3.9062ZM21.5252 3.9063h-3.8889V.8682h-1.642v3.038h-1.5556v1.5973h1.5556v4.8436c0 1.3888.7778 2.1527 2.1778 2.1527h3.3531v-1.6145h-3.0247c-.5531 0-.8642-.3125-.8642-.8507V5.5035h3.8889V3.9063ZM33.2548 3.6804c-1.3137 0-2.316.6424-2.8692 1.6667h-.0518c-.5013-1.007-1.4346-1.6667-2.7136-1.6667-1.1407 0-2.005.6076-2.5235 1.4583h-.0692V3.9061h-1.5728v8.5935h1.642V8.09c0-1.6145.8468-2.795 2.126-2.8297 1.2098-.0348 1.9185.8333 1.9185 2.1353v5.104h1.642V7.9512c0-1.927 1.1407-2.691 2.1259-2.691 1.1926 0 1.9014.8334 1.9014 2.1354v5.104h1.6418V7.222c0-2.0833-1.1753-3.5416-3.1975-3.5416ZM38.6776 10.2775c0 1.4062.7951 2.2222 2.2642 2.2222h1.6247v-1.5972h-1.3828c-.5531 0-.8643-.3125-.8643-.8507V0h-1.6418v10.2775ZM23.3752 15.9364h-.0692c-.6407-.863-1.6794-1.467-3.0647-1.4843-2.5454-.0345-4.3635 1.8467-4.3635 4.5045 0 2.6752 1.8527 4.5564 4.3461 4.5219 1.4198-.0174 2.4414-.6559 3.0821-1.5707h.0692v1.3289h1.6278v-8.543h-1.6278v1.2427Zm-2.9089 5.9543c-1.8007 0-2.9435-1.3118-2.9435-2.9341 0-1.6223 1.1428-2.9339 2.9435-2.9339 1.7489 0 2.8918 1.3116 2.8918 2.9339 0 1.6052-1.1429 2.9341-2.8918 2.9341ZM35.752 17.8003c-.3983-1.933-2.1125-3.3482-4.3634-3.3482-2.7185 0-4.5365 1.9848-4.5365 4.5046 0 2.5197 1.818 4.5218 4.5365 4.5218 2.2509 0 3.9651-1.4498 4.3634-3.4h-1.7142c-.3463 1.0873-1.3679 1.8293-2.6319 1.8293-1.7662 0-2.9091-1.3289-2.9091-2.9511 0-1.6224 1.1429-2.934 2.9091-2.934 1.3159 0 2.2856.7766 2.6319 1.7776h1.7142ZM44.5459 15.9364h-.0693c-.6406-.863-1.6796-1.467-3.0649-1.4843-2.5453-.0345-4.3634 1.8467-4.3634 4.5045 0 2.6752 1.8528 4.5564 4.3461 4.5219 1.4199-.0174 2.4416-.6559 3.0822-1.5707h.0693v1.3289h1.6276v-8.543h-1.6276v1.2427Zm-2.909 5.9543c-1.8009 0-2.9436-1.3118-2.9436-2.9341 0-1.6223 1.1427-2.9339 2.9436-2.9339 1.7489 0 2.8916 1.3116 2.8916 2.9339 0 1.6052-1.1427 2.9341-2.8916 2.9341ZM55.5201 16.0227h-.0692c-.6407-.9148-1.7144-1.5533-3.0823-1.5706-2.4932-.0345-4.346 1.8467-4.346 4.5218 0 2.6578 1.8181 4.5391 4.3634 4.5046 1.3505-.0174 2.4242-.6214 3.0476-1.4843h.0865v1.2425h1.6276V10.8105h-1.6276v5.2122Zm-2.9089 5.8851c-1.8009 0-2.9437-1.3115-2.9437-2.9339 0-1.6223 1.1428-2.934 2.9437-2.934 1.7489 0 2.8916 1.3289 2.8916 2.934 0 1.6224-1.1427 2.9339-2.8916 2.9339ZM63.3449 14.4521c-2.6319 0-4.4328 2.0193-4.4328 4.5218 0 2.4335 1.697 4.5046 4.4673 4.5046 2.0086 0 3.619-1.0873 4.1905-2.8996h-1.7144c-.3807.8113-1.2985 1.3289-2.4067 1.3289-1.5583 0-2.6666-1.0354-2.7878-2.3643h7.082c.225-2.8477-1.5584-5.0914-4.3981-5.0914Zm-.0347 1.5706c1.3679 0 2.3896.8457 2.6493 2.071h-5.2638c.2423-1.2081 1.264-2.071 2.6145-2.071ZM79.4126 14.4695c-1.3158 0-2.3201.6385-2.8742 1.6568h-.0521c-.502-1.001-1.4371-1.6568-2.7184-1.6568-1.1427 0-2.0086.604-2.528 1.4497h-.0692v-1.2254H69.595v8.543h1.6449v-4.3836c0-1.6051.8485-2.7787 2.1299-2.8132 1.2119-.0345 1.922.8284 1.922 2.1228v5.074h1.6449v-4.5217c0-1.9157 1.1427-2.6751 2.1297-2.6751 1.1947 0 1.9046.8284 1.9046 2.1228v5.074h1.645v-5.2466c0-2.071-1.1775-3.5207-3.2034-3.5207ZM88.5048 21.8732l-2.9437-7.1796H83.743l3.9133 9.3543-.0172.0345c-.2771.7075-.5888.9664-1.3507.9664h-2.0258v1.6395h2.0258c1.4891 0 2.2856-.673 2.8397-2.1228l3.7748-9.8719h-1.6797l-2.7184 7.1796Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h93v26.7107H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
           </li>
           <li class="copy-item">
-            <a class="copy-link copyright" href="#"></a>
+            <a class="copy copyright" href="#">
+              Сделано в
+              <span class="underline">.html academy</span> © 2021
+            </a>
           </li>
         </ul>
       </footer>
@@ -565,7 +598,6 @@
         </section>
       </div>
     </div>
-
   </body>
 
 </html>
