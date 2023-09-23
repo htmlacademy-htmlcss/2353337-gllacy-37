@@ -11,7 +11,7 @@
      -->
   </head>
 
-  <!--  в боди менять классы:
+  <!--  у боди менять классы:
          blue - для 2го слайда
          yellow - для 3го слайда  -->
 
@@ -32,7 +32,7 @@
                   <a class="submenu-link link-bold" href="#">Новинки</a>
                 </li>
                 <li class="submenu-item">
-                  <a class="submenu-link" href="#">Сливочное</a>
+                  <a class="submenu-link" href="./catalog.html">Сливочное</a>
                 </li>
                 <li class="submenu-item">
                   <a class="submenu-link" href="#">Щербеты</a>
@@ -572,26 +572,27 @@
     </div>
 
     <!--  Модальное окно  -->
-    <div class="modal-overlay">
+    <div class="modal-overlay modal-show">
       <div class="modal modal-container">
         <button class="modal-close-btn" type="button">
           <span class="visually-hidden">Закрыть окно обратной связи.</span>
         </button>
+
         <section class="modal-content">
-          <h2 class="modal-title title-like">Форма обратной связи.</h2>
-          <p class="slogan-feedback">Мы обязательно ответим вам!</p>
+          <h2 class="visually-hidden">Форма обратной связи.</h2>
+          <p class="modal-title">Мы обязательно ответим вам!</p>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" name="modal" method="post">
-            <label class="visually-hidden" for="name">Ваши имя и фамилия.
-            </label>
+            <label class="visually-hidden" for="name">Как к Вам обращаться</label>
             <input class="name-field modal-input" type="text" id="name" name="name" placeholder="Имя и фамилия"
               required>
             <label class="visually-hidden" for="email">Адрес Вашей электронной почты.
             </label>
-            <input class="email-fild email-subscribe" type="email" name="email" id="email" value=""
+            <input class="email-fild modal-input" type="email" name="email" id="email" value=""
               placeholder="email@example.com" required>
-            <label class="visually-hidden" for="message">Ваше сообщение.
+            <label class="visually-hidden" for="message">Ваше сообщение...
             </label>
-            <input class="message" type="textarea" id="message" name="message" placeholder="В свободной форме" required>
+            <textarea class="message modal-input" name="message" id="message" cols="50" rows="20"
+              placeholder="В свободной форме" required></textarea>
             <button class="btn send-btn modal-btn" type="submit">Отправить
             </button>
           </form>
