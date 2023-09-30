@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/style.css">
-    <!--
+
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/icons/favicon.png">
-     -->
+
   </head>
 
   <!--  у боди менять классы:
@@ -19,31 +19,33 @@
     <div class="page-wrapper">
       <!--  Хедер  -->
       <header class="header">
+        <a class="logo-link" href="index.html">
+          <img class="logo-image" src="./images/logo.svg" width="137" height="58" alt="Глейси">
+        </a>
         <nav class="navigation">
-          <a class="logo-link" href="index.html">
-            <img class="logo-image" src="./images/logo.svg" width="137" height="58" alt="Глейси">
-          </a>
           <ul class="menu-list">
             <li class="menu-item with-submenu catalog-item">
-              <button class="btn menu-btn catalog-btn" type="button">Каталог
-              </button>
-              <ul class="submemu">
-                <li class="submenu-item item-bold">
-                  <a class="submenu-link link-bold" href="#">Новинки</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="./catalog.html">Сливочное</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="#">Щербеты</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="#">Фруктовый лед</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="#">Мелорин</a>
-                </li>
-              </ul>
+              <a class="btn menu-btn catalog-btn" href="#">Каталог
+              </a>
+              <div class="submenu-box subcatalog-box">
+                <ul class="submemu">
+                  <li class="submenu-item item-bold">
+                    <a class="submenu-link link-bold" href="#">Новинки</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="./catalog.html">Сливочное</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item delivery-item">
               <a class="menu-btn" href="#">Доставка и оплата</a>
@@ -59,26 +61,28 @@
                 <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
               </div>
             </li>
-            <li class="user-menu-item with-submenu">
-              <div class="li-box">
-                <button class="btn search-btn" type="button">
-                  <span class="visually-hidden">Поиск</span>
-                </button>
-                <form class="search-form user-submenu" action="https://echo.htmlacademy.ru/" method="get">
-                  <input class="input search-input" type="search" name="search" id="search" placeholder="Поиск по сайту"
-                    required>
-                  <label class="visually-hidden" for="search">Поиск
+
+            <li class="user-menu-item with-submenu search-item">
+              <a class="btn search-btn" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+              <div class="submenu-box search-box">
+                <form class="search-form user-submenu" action="https://echo.htmlacademy.ru" method="get">
+                  <label class="visually-hidden" for="search">Поиск.
                   </label>
-                  <button class="delete-btn reset-search" type="reset">
+                  <input class="input search-input" type="text" name="search" id="search" placeholder="Поиск по сайту"
+                    required>
+                  <button class="delete-btn reset-search" type="reset" for="search">
                     <span class="visually-hidden">Очистить форму</span>
                   </button>
                 </form>
               </div>
             </li>
-            <li class="user-menu-item with-submenu">
-              <div class="li-box">
-                <button class="btn entry-btn" type="button">Вход</button>
-                <!--  Окошко - входа в ЛК  -->
+
+            <li class="user-menu-item with-submenu entry-item">
+              <a class="btn entry-btn" href="#">Вход</a>
+              <!--  Окошко - входа в ЛК  -->
+              <div class="submenu-box entry-box">
                 <form class="user-form user-submenu" action="https://echo.htmlacademy.ru" method="post">
                   <h3 class="subtitle">Личный кабинет</h3>
                   <label class="visually-hidden" for="user-email">Ваш e-mail.
@@ -92,27 +96,27 @@
                   <div class="buttons-wrap">
                     <button class="btn enter-btn" type="submit"> Войти
                     </button>
-                    <a class="near-enter" href="#">Забыли пароль?</a>
-                    <a class="near-enter registration" href="#">Регистрация</a>
+                    <a class="about-password" href="#">Забыли пароль?</a>
+                    <a class="about-password registration" href="#">Регистрация</a>
                   </div>
                 </form>
               </div>
             </li>
 
             <li class="user-menu-item cart-item with-submenu">
-              <div class="li-box">
-                <button class="btn cart-btn" type="button">
-                  <span class="text-btn">2</span>
-                  <span class="text-btn"> товара</span>
-                </button>
-                <!--  Попап корзина  -->
+              <a class="btn cart-btn" href="#">
+                <span class="text-btn">2</span>
+                <span class="text-btn"> товара</span>
+              </a>
+              <!--  Попап корзина  -->
+              <div class="submenu-box cart-box">
                 <div class="subcart-box user-submenu">
                   <h3 class="subtitle">Корзина</h3>
                   <ul class="subcart-list">
                     <li class="subcart-item">
                       <a class="subcart-link" href="#">
-                        <img class="subcart-img" src="./images/product-cards/bubble-gum-small.png" width="46"
-                          height="46" alt="">
+                        <img class="subcart-img" src="./images/product-cards/raspberry.jpg" width="46" height="46"
+                          alt="">
                         <span class="subcart-text product-name"> Малинка</span>
                         <div class="product-desc-box">
                           <span class="value">1 кг х</span>
@@ -120,13 +124,13 @@
                         </div>
                       </a>
                       <span class="subcart-text total-per-position">310 ₽</span>
-                      <button class="delete-btn" type="button">
-                        <span class="visually-hidden">Удалитьтовар из корзины</span>
+                      <button class="delete-btn delete-item" type="button">
+                        <span class="visually-hidden">Удалить товар из корзины</span>
                       </button>
                     </li>
                     <li class="subcart-item">
                       <a class="subcart-link" href="#">
-                        <img class="subcart-img" src="./images/product-cards/raspberry-small.png" width="46" height="46"
+                        <img class="subcart-img" src="./images/product-cards/bubble-gum.jpg" width="46" height="46"
                           alt="">
                         <span class="subcart-text product-name"> Бабл-гам</span>
                         <div class="product-desc-box">
@@ -135,7 +139,7 @@
                         </div>
                       </a>
                       <span class="subcart-text total-per-position">480 ₽</span>
-                      <button class="delete-btn" type="button">
+                      <button class="delete-btn delete-item" type="button">
                         <span class="visually-hidden">Удалить товар из корзины</span>
                       </button>
                     </li>
@@ -149,10 +153,10 @@
             </li>
             <!--  Пустая корзина  -->
             <li class="user-menu-item empty-cart with-submenu">
-              <div class="li-box">
-                <button class="btn empty-cart-btn" type="button">
-                  Нет товаров
-                </button>
+              <a class="btn empty-cart-btn" href="#">
+                Нет товаров
+              </a>
+              <div class="submenu-box empty-cart-box">
                 <div class="empty-subcart-box user-submenu">
                   <span class="empty-subcart-text">Ваша корзина пока пуста</span>
                 </div>
@@ -169,16 +173,18 @@
         <section class="slider">
           <h2 class="visually-hidden">Рекомендуем!
           </h2>
-          <button class="btn contral-slider next-control" type="button">
+          <button class="btn contral-slider prev-control" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
-          <button class="btn contral-slider prev-control" type="button">
+          <button class="btn contral-slider next-control" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
+
           <ol class="slider-list">
+
             <!--  Слайд 1  -->
             <li class="slider-item slide-active">
-              <div class="slider-desc-box">
+              <div class="slider-texts-box">
                 <h3 class="what-is-good">Нежный пломбир с&nbsp;клубничным джемом
                 </h3>
                 <p class="text-slider">Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным
@@ -186,23 +192,14 @@
                 </p>
                 <a class="btn to-do-order" href="#">Заказать</a>
               </div>
-              <div class="active-img-box">
-                <img class="active-img" src="./images/slide-strawberry.png" width="327" height="507" alt="">
+              <div class="img-box">
+                <img class="slider-img" src="./images/slide-strawberry.png" width="327" height="507" alt="">
               </div>
-              <div class="mini-img-box">
-                <a class="img-link" href="#">
-                  <img class="img-small" src="./images/slide-banana-small.png" width="66" height="150"
-                    alt="Миниатюра - сливочное мороженое с банановым вкусом.">
-                </a>
-                <a class="img-link" href="#">
-                  <img class="img-small" src="./images/slide-caramel-small.png" width="66" height="150"
-                    alt="Миниатюра - карамельный пломбир с маршмеллоу.">
-                </a>
-              </div>
+
             </li>
             <!--  Слайд 2  -->
-            <li class="slider-item ">
-              <div class="slider-desc-box">
+            <li class="slider-item">
+              <div class="slider-texts-box">
                 <h3 class="what-is-good">Сливочное мороженое со вкусом банана
                 </h3>
                 <p class="text-slider">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
@@ -210,23 +207,14 @@
                 </p>
                 <a class="btn to-do-order" href="#">Заказать</a>
               </div>
-              <div class="active-img-box">
-                <img class="active-img" src="./images/slide-banana.png" width="312" height="507" alt="">
+              <div class="img-box">
+                <img class="slider-img" src="./images/slide-banana.png" width="312" height="507" alt="">
               </div>
-              <div class="mini-img-box">
-                <a class="img-link" href="#">
-                  <img class="img-small" src="./images/slide-caramel-small.png" width="66" height="150"
-                    alt="Миниатюра - карамельный пломбир с маршмеллоу.">
-                </a>
-                <a class="img-link" href="#">
-                  <img class="img-small" src="./images/slide-strawberry-small.png" width="66" height="150"
-                    alt="Миниатюра - Нежный пломбир с клубничным джемом.">
-                </a>
-              </div>
+
             </li>
             <!--  Слайд 3  -->
             <li class="slider-item">
-              <div class="slider-desc-box">
+              <div class="slider-texts-box">
                 <h3 class="what-is-good">Карамельный пломбир с&nbsp;маршмеллоу
                 </h3>
                 <p class="text-slider">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
@@ -234,40 +222,31 @@
                 </p>
                 <a class="btn to-do-order" href="#">Заказать</a>
               </div>
-              <div class="active-img-box">
-                <img class="active-img" src="./images/slide-caramel.png" width="350" height="507" alt="">
+              <div class="img-box">
+                <img class="slider-img" src="./images/slide-caramel.png" width="350" height="507" alt="">
               </div>
-              <div class="mini-img-box">
-                <a class="img-link" href="#">
-                  <img class="img-small" src="./images/slide-strawberry-small.png" width="66" height="150"
-                    alt="Миниатюра - Нежный пломбир с клубничным джемом.">
-                </a>
-                <a class="img-link" href="#">
-                  <img class="img-small" src="./images/slide-banana-small.png" width="66" height="150"
-                    alt="Миниатюра - сливочное мороженое с банановым вкусом.">
-                </a>
-              </div>
+
             </li>
           </ol>
           <footer class="slider-footer">
             <ol class="pagination">
               <li class="pagination-item active-item">
-                <a class="pagination-btn current-link" href="#">
+                <button class="btn pagination-btn current-btn" type="button">
                   <span class="visually-hidden">Первый слайд
                   </span>
-                </a>
+                </button>
               </li>
               <li class="pagination-item">
-                <a class="pagination-btn" href="#">
+                <button class="btn pagination-btn" type="button">
                   <span class="visually-hidden">Второй слайд
                   </span>
-                </a>
+                </button>
               </li>
               <li class="pagination-item">
-                <a class="pagination-btn" href="#">
+                <button class="btn pagination-btn" type="button">
                   <span class="visually-hidden">Третий слайд
                   </span>
-                </a>
+                </button>
               </li>
             </ol>
             <ul class="socials">
@@ -302,19 +281,16 @@
               </p>
               <a class="btn gift-btn to-do-order" href="#">Хочу подарок</a>
             </div>
-            <img class="gift-img raspberry-img" src="../images/gift-raspberry.png"
-              alt="Малинка падает в вафельный рожок и наполнят его.">
           </div>
           <div class="gift gift-marshmallow">
             <div class="gift-box">
               <h3 class="subtitle">Маршмеллоу даром!</h3>
-              <p class="text desc-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно
+              <p class="text desc-text">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок
+                совершенно
                 бесплатно.
               </p>
               <a class="btn gift-btn to-do-order" href="#">Хочу подарок</a>
             </div>
-            <img class="gift-img marshmallow-img" src="../images/gift-marshmallow.png"
-              alt="Маршмеллоу  падает в вафельный рожок и наполнят его.">
           </div>
         </section>
         <section class="favorits">
@@ -326,59 +302,59 @@
             <ul class="cards-list">
               <li class="card-item">
                 <a class="card-link" href="#">
-                  <img class="card-img" src="./images/product-cards/raspberry.png" width="168" height="168"
+                  <img class="card-img" src="./images/product-cards/raspberry.jpg" width="168" height="168"
                     alt="Шарик мороженого">
                   <h3 class="card-title like-subtitle">Малинка</h3>
                   <p class="text card-desc">Сливочное мороженое с малиновым джемом</p>
-                  <div class="card-price-wrap">
-                    <span class="card-price like-subtitle">310 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
-                      <span class="visually-hidden">Добавить в карзину</span>
-                  </div>
-                  </button>
                 </a>
+                <div class="card-price-wrap">
+                  <span class="card-price like-subtitle">310 ₽/кг</span>
+                  <button class="btn into-cart-btn" type="submit">
+                    <span class="visually-hidden">Добавить в карзину</span>
+                  </button>
+                </div>
               </li>
               <li class="card-item">
                 <a class="card-link" href="#">
-                  <img class="card-img" src="./images/product-cards/pistachio.png" width="168" height="168"
+                  <img class="card-img" src="./images/product-cards/pistachio.jpg" width="168" height="168"
                     alt="Шарик мороженого">
                   <h3 class="card-title like-subtitle">Фисташка</h3>
                   <p class="text card-desc">Фисташковый пломбир с&nbsp; кусочками шоколада</p>
-                  <div class="card-price-wrap">
-                    <span class="card-price like-subtitle">340 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
-                      <span class="visually-hidden">Добавить в карзину</span>
-                  </div>
-                  </button>
                 </a>
+                <div class="card-price-wrap">
+                  <span class="card-price like-subtitle">340 ₽/кг</span>
+                  <button class="btn into-cart-btn" type="submit">
+                    <span class="visually-hidden">Добавить в карзину</span>
+                </div>
+                </button>
               </li>
               <li class="card-item">
                 <a class="card-link" href="#">
-                  <img class="card-img" src="./images/product-cards/blueberries.png" width="168" height="168"
+                  <img class="card-img" src="./images/product-cards/blueberries.jpg" width="168" height="168"
                     alt="Шарик мороженого">
                   <h3 class="card-title like-subtitle">Черника</h3>
                   <p class="text card-desc">Крем-брюле с&nbsp;черничным джемом</p>
-                  <div class="card-price-wrap">
-                    <span class="card-price like-subtitle">330 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
-                      <span class="visually-hidden">Добавить в карзину</span>
-                  </div>
-                  </button>
                 </a>
+                <div class="card-price-wrap">
+                  <span class="card-price like-subtitle">330 ₽/кг</span>
+                  <button class="btn into-cart-btn" type="submit">
+                    <span class="visually-hidden">Добавить в карзину</span>
+                </div>
+                </button>
               </li>
               <li class="card-item">
                 <a class="card-link" href="#">
-                  <img class="card-img" src="./images/product-cards/bubble-gum.png" width="168" height="168"
+                  <img class="card-img" src="./images/product-cards/bubble-gum.jpg" width="168" height="168"
                     alt="Шарик мороженого">
                   <h3 class="card-title like-subtitle">Бабл-гам</h3>
                   <p class="text card-desc">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
-                  <div class="card-price-wrap">
-                    <span class="card-price like-subtitle">320 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
-                      <span class="visually-hidden">Добавить в карзину</span>
-                  </div>
-                  </button>
                 </a>
+                <div class="card-price-wrap">
+                  <span class="card-price like-subtitle">320 ₽/кг</span>
+                  <button class="btn into-cart-btn" type="submit">
+                    <span class="visually-hidden">Добавить в карзину</span>
+                </div>
+                </button>
               </li>
             </ul>
           </div>
@@ -391,29 +367,21 @@
               производства на развес
             </p>
             <ul class="features-list">
-              <li class="features-item">
-                <span class="text features-text own">
-                  Всё наше мороженое изготавливается на собственном производстве с использованием современного
-                  оборудования и проверенных временем технологий.
-                </span>
+              <li class="features-item own">
+                Всё наше мороженое изготавливается на собственном производстве с использованием современного
+                оборудования и проверенных временем технологий.
               </li>
-              <li class="features-item">
-                <span class="text features-text provider">
-                  Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с которыми
-                  нас&nbsp;связывает долговременное сотрудничество.
-                </span>
+              <li class="features-item provider">
+                Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с которыми
+                нас&nbsp;связывает долговременное сотрудничество.
               </li>
-              <li class="features-item">
-                <span class="text features-text quality">
-                  Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего качества. Все ингредиенты
-                  и&nbsp;добавки произведены из натурального сырья.
-                </span>
+              <li class="features-item quality">
+                Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего качества. Все ингредиенты
+                и&nbsp;добавки произведены из натурального сырья.
               </li>
-              <li class="features-item">
-                <span class="text features-text shipping">
-                  Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять
-                  и позволяет сохранить превосходный вкус.
-                </span>
+              <li class="features-item shipping">
+                Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять
+                и позволяет сохранить превосходный вкус.
               </li>
             </ul>
           </section>
@@ -572,7 +540,7 @@
     </div>
 
     <!--  Модальное окно  -->
-    <div class="modal-overlay modal-show">
+    <div class="modal-overlay">
       <div class="modal modal-container">
         <button class="modal-close-btn" type="button">
           <span class="visually-hidden">Закрыть окно обратной связи.</span>
@@ -599,6 +567,7 @@
         </section>
       </div>
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 
 </html>
