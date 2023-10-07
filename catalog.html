@@ -206,11 +206,13 @@
                   <span class="like-label cost-title">Цена:</span>
                   <div class="inputs-wrap">
                     <label class="range-label">
+                      <span class="visually-hidden">Указать максимальную цену</span>
                       <input class="range-input range-from" type="number" name="price-from" min="0" placeholder="50"
                         value="100">
                     </label>
                     <span class="dash">-</span>
                     <label class="range-label">
+                      <span class="visually-hidden">Указать минимальную цену</span>
                       <input class="range-input range-till" type="number" name="price-till" max="1500" placeholder="999"
                         value="500">
                     </label>
@@ -236,26 +238,26 @@
                 <ul class="filter-list fat-list">
                   <li class="filter-item">
                     <label class="filter-label fat-label">
-                      <input class="visually-hidden fat-input" type="radio" name="fat">
+                      <input class="visually-hidden fat-input" type="radio" name="fat" value="0%">
                       <span class="input-box fat-box"></span>0%
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="filter-label fat-label">
-                      <input class="visually-hidden fat-input" type="radio" name="fat" checked>
-                      <span class="input-box fat-box"></span>до 10%
+                      <input class="visually-hidden fat-input" type="radio" name="fat" value="10%" checked>
+                      <span class=" input-box fat-box"></span>до 10%
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="filter-label fat-label">
-                      <input class="visually-hidden fat-input" type="radio" name="fat">
-                      <span class="input-box fat-box"></span>до 30%
+                      <input class="visually-hidden fat-input" type="radio" name="fat" value="30%">
+                      <span class=" input-box fat-box"></span>до 30%
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="filter-label fat-label">
-                      <input class="visually-hidden fat-input" type="radio" name="fat">
-                      <span class="input-box fat-box"></span>выше 30%
+                      <input class="visually-hidden fat-input" type="radio" name="fat" value="больше 30%">
+                      <span class=" input-box fat-box"></span>выше 30%
                     </label>
                   </li>
                 </ul>
@@ -302,7 +304,7 @@
                 </ul>
               </fieldset>
 
-              <button class="btn filter-btn to-do-order" type="button">Показать</button>
+              <button class="btn filter-btn to-do-order" type="submit">Показать</button>
             </div>
           </form>
         </section>
@@ -323,7 +325,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">310 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -339,7 +341,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">340 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -355,7 +357,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">330 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -371,7 +373,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">320 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -387,7 +389,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">330 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -403,7 +405,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">340 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -419,7 +421,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">270 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -435,7 +437,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">300 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -451,7 +453,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">310 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -467,7 +469,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">360 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -483,7 +485,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">360 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -499,7 +501,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">280 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -509,7 +511,7 @@
           </div>
 
           <div class="pagination-catalog">
-            <button class="btn show-more to-do-order">Показать еще</button>
+            <button class="btn show-more to-do-order" type="button">Показать еще</button>
             <div class="pagination-box">
               <a class="link-arrow prev disabled">
                 <span class="visually-hidden">Предыдущая страница</span>

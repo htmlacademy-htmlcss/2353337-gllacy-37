@@ -312,7 +312,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">310 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -328,7 +328,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">340 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -344,7 +344,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">330 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -360,7 +360,7 @@
                   </a>
                   <div class="card-price-wrap">
                     <span class="card-price like-subtitle">320 ₽/кг</span>
-                    <button class="btn into-cart-btn" type="submit">
+                    <button class="btn into-cart-btn" type="button">
                       <span class="visually-hidden">Добавить в карзину</span>
                     </button>
                   </div>
@@ -407,7 +407,7 @@
                 самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="visually-hidden" for="email"></label>
+                <label class="visually-hidden" for="email">Напишите адрес своей электронной почты</label>
                 <input class="input email-subscribe" type="email" name="email" id="email" value=""
                   placeholder="email@example.com">
                 <button class="btn send-btn" type="submit">Отправить</button>
@@ -428,7 +428,7 @@
               <span class="text point-form">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы
                 подтвердитьзаказ.</span>
               <div class="label-wrap date">
-                <label class="label note" for="date">Дата
+                <label class="label note" for="date" tabindex="0">Дата
                   <span class="text tooltip">Введите дату в любом формате.</span>
                 </label>
                 <input class="input delivery-input" type="text" pattern="[0-9]{,1}" id="date" name="date"
@@ -440,7 +440,7 @@
                   pattern="[0-9]{5,}" required>
               </div>
               <div class="label-wrap address-box">
-                <label class="label note" for="address">Адрес
+                <label class="label note" for="address" tabindex="0">Адрес
                   <span class="text tooltip">Введите название улицы, дома и квартиры</span>
                 </label>
                 <input class="input delivery-input" type="text" id="address" name="address"
