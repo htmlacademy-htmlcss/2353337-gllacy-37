@@ -103,9 +103,9 @@ body {
   color: #2d3440;
 
   border: none;
-  cursor: pointer;
   border-radius: 26px;
   background: transparent;
+  cursor: pointer;
 
   transition: background 0.3s, color 0.3s;
 }
@@ -1226,8 +1226,6 @@ button.current-btn {
   margin: 0;
   padding: 0 40px 29px 40px;
   text-align: center;
-
-  transition: transform 0.3s;
 }
 
 .card-item::before {
@@ -1247,23 +1245,12 @@ button.current-btn {
 .card-link {
   display: block;
   height: 100%;
-  transition: transform 0.3s, outline 0.3s;
 }
 
 .into-cart-wrap {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-a.card-link:focus-visible {
-  outline: 3px solid rgba(45, 52, 64, 0.2);
-  outline-offset: 4px;
-  border-radius: 2px;
-}
-
-a.card-link:hover {
-  transform: translateY(-5px);
 }
 
 .card-img {
@@ -1273,6 +1260,29 @@ a.card-link:hover {
 
   border-radius: 50%;
   overflow: hidden;
+
+  animation: rotation 1s infinite linear;
+  animation-play-state: paused;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a.card-link:hover .card-img,
+a.card-link:focus-visible .card-img {
+  animation-play-state: running;
+}
+
+a.card-link:focus-visible {
+  outline: none;
+  border: none;
+}
+
+a.card-link:active .card-img {
+  animation-play-state: paused;
 }
 
 .like-subtitle {
@@ -1286,11 +1296,20 @@ a.card-link:hover {
 .card-title {
   margin-top: 0;
   margin-bottom: 8px;
+
+  transition: opacity 0.3s;
 }
 
 .card-desc {
   margin: 0;
   flex-grow: 1;
+
+  transition: opacity 0.3s;
+}
+
+a.card-link:active .card-title,
+a.card-link:active .card-desc {
+  opacity: 0.5;
 }
 
 .card-price-wrap {
