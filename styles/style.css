@@ -93,17 +93,20 @@ body {
 }
 
 .btn {
-  border: none;
-  cursor: pointer;
-  border-radius: 26px;
-  background: transparent;
+  display: block;
+
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
   color: #2d3440;
-  display: block;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 26px;
+  background: transparent;
+
   transition: background 0.3s, color 0.3s;
 }
 
@@ -450,18 +453,19 @@ a.breadcrumbs-link:focus-visible {
   font-weight: 400;
   line-height: 20px;
 
-  border: 1px solid #b9b9b9;
+  outline: 1px solid #b9b9b9;
   border-radius: 4px;
+  border: none;
   background-color: #ffffff;
 }
 
 .input:hover {
-  border-color: #2d3440;
+  outline-color: #2d3440;
 }
 
 .input:focus-visible {
-  border: 2px solid #2d3440;
-  outline: none;
+  outline: 2px solid #2d3440;
+  border: none;
 }
 
 /*  для ошибки в инпуте  */
@@ -1413,6 +1417,7 @@ a.card-link:hover {
   padding: 33px 235px 68px 32px;
 
   background: url("../images/background/news-bg.jpg") no-repeat;
+  background-color: #fcfcfc;
   background-position: top right;
   background-size: cover;
   border-radius: 16px;
@@ -1544,7 +1549,8 @@ a.card-link:hover {
   margin-bottom: 79px;
 
   background: url("../images/background/delivery-bg.jpg") no-repeat;
-  background-position: top -1px left -1px;
+  background-color: #e7e7e7;
+  background-position: top left;
   background-size: cover;
   border-radius: 16px;
 }
@@ -1650,6 +1656,11 @@ a.card-link:hover {
 .note:hover .tooltip,
 .note:focus-visible .tooltip {
   display: block;
+}
+
+.note:focus-visible {
+  outline: none;
+  border: none;
 }
 
 .delivery-input {
@@ -1938,15 +1949,6 @@ ul.copyrights {
   width: 100%;
   padding: 12px 16px;
   margin: 0;
-
-  font: inherit;
-  color: inherit;
-  letter-spacing: inherit;
-
-  border-radius: 4px;
-  border: 1px solid #B9B9B9;
-  background: #ffffff;
-  box-shadow: none;
 }
 
 .modal-input::placeholder {
